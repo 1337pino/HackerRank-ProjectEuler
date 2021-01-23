@@ -1,4 +1,3 @@
-
 /** Project Euler #1: Multiples of 3 and 5
  * https://www.hackerrank.com/contests/projecteuler/challenges/euler001/problem
  */
@@ -17,8 +16,13 @@ public class Solution1 {
                 int integerN = in.nextInt();
                 long sum = 0;
                 
+                // Calculate the sum of the 3's multiples
                 sum += calculateArithmeticSum(3, integerN);
+
+                // Include the sum of the 5's multiples
                 sum += calculateArithmeticSum(5, integerN);
+
+                // Remove the duplicated multiples that are both multiples of 3 and 5
                 sum -= calculateArithmeticSum(15, integerN);
                 
                 System.out.println(sum);
