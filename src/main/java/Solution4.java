@@ -10,8 +10,8 @@ public class Solution4 {
         Scanner in = new Scanner(System.in);
 
         try {
-            int t = in.nextInt();
-            for(int i = 0; i < t; i++){
+            int numberOfTestcases = in.nextInt();
+            for(int i = 0; i < numberOfTestcases; i++){
                 int integerN = in.nextInt();
                 
                 for (int j = integerN - 1; j >= 100001; j--) {
